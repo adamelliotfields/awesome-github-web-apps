@@ -1,16 +1,28 @@
-# Awesome GitHub Web Apps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Web Applications [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 > :octocat: _A curated collection of web applications with source code available on GitHub._
 
-Since there are literally millions of repositories on GitHub, some criteria has been established
-for inclusion in the list:
-  1. Must be a web application that can run on `localhost` with an interactive UI that runs in the browser.
-  2. Must have installation/deployment instructions in the `README`.
-  3. Must be a fully-functional application, not a boilerplate/starter-kit.
-  4. Must have English documentation.
-  5. Must have ~500 stars.
+The purpose of this list is to focus on the architecture, technologies, and design used to build
+some truly _awesome_ apps available on GitHub.
+
+Use it as a source of inspiration and knowledge.
+
+## Contributing
+To be included in the list, each application should meet the following criteria:
+  1. Must have source code on GitHub. Furthermore, all of the source code required to run the app should be public.
+  2. Must be an application that can be run on `localhost`. Having external dependencies (i.e., API keys, Firebase) is fine as long as they have a free tier.
+  3. Must be a fully-functional application intended to be used as-is, not a starter-kit. Apps from online courses should be submitted only if they add value to the list (e.g., interesting concept, complex architecture, beautiful design).
+  4. Must have a `README` that includes information about the application with installation instructions. A demo or screenshots are certainly nice to have.
+  5. Must have English documentation. If you find something cool and are able to translate the docs, it's a great way to contribute to open source!
+  6. Must have at least 100 stars.
+
+Ideally, I want to focus on quality over quantity. Remember, the goal is to inspire others and teach
+one another how to build more advanced applications.
+
+Simply open an issue explaining why you want to add the app and we can discuss if a pull request
+makes sense :smile:
 
 ## Programming Languages
-  - [C#](#c-)
+  - [C#](#c)
   - [Dart](#dart)
   - [Elixir](#elixir)
   - [Go](#go)
