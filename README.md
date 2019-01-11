@@ -12,16 +12,8 @@ To be included in the list, each application should meet the following criteria:
   2. **Must be able to run locally on a Linux operating system.** Docker/Compose files would be nice to have. Having external dependencies (i.e., API keys, Firebase) is fine as long as they have a free tier.
   3. **Must be a functioning application.** It should not be a starter-kit.
   4. **Must have acceptable documentation.** Should contain information about the application along with installation instructions. A demo or screenshots are certainly nice to have. Documentation and demo apps should be in English.
-  5. **Must have at least 100 stars.** Exceptions can be made for awesome apps of all star counts, though.
-
-Ideally, the focus should be on quality over quantity.
-
-Simply open an issue explaining why you want to add the app and we can discuss if a pull request
-makes sense :smile:
 
 ## Tags
-  - `abandoned` - All development has stopped.
-  - `inactive` - Limited development activity.
   - `mobile` - Includes native mobile code (e.g., React Native, Flutter).
   - `desktop` - Includes desktop code (e.g., Electron, NW.js).
   - `static` - Can be deployed to any static web server (e.g., GitHub Pages, Surge).
@@ -40,6 +32,11 @@ makes sense :smile:
 
 ## C&#35;
 
+#### [bitwarden](https://github.com/bitwarden/core) `mobile` `desktop` `docker`
+A .NET Core application providing secure password management. Bitwarden can be used as a web
+application, browser extension, mobile app, desktop app, and even a CLI. The web client uses Angular
+and the mobile client uses Xamarin. The backend uses SQL Server and it can be deployed via Docker.
+
 #### [reactivetradercloud](https://github.com/AdaptiveConsulting/ReactiveTraderCloud) ([demo](https://web-demo.adaptivecluster.com/)) `docker`
 A .NET application demonstrating a real-time foreign exchange trading platform. It is written using
 stream-based, reactive programming using the Event Source database. The frontend is a React
@@ -54,13 +51,16 @@ built with Flutter, and the web app uses AngularDart. Movie metadata is pulled f
 
 ## Elixir
 
-#### [mogo-chat](https://github.com/HashNuke/mogo-chat) `abandoned`
+#### [magnetissimo](https://github.com/sergiotapia/magnetissimo)
+A Phoenix application for indexing torrent sites and storing them in a PostgreSQL database.
+
+#### [mogo-chat](https://github.com/HashNuke/mogo-chat)
 A Phoenix team chat application. Includes an Ember frontend written in Coffeescript, and uses a
 PostgreSQL database on the backend.
 
 ## Go
 
-#### [filebrowser](https://github.com/filebrowser/filebrowser) `docker` `inactive`
+#### [filebrowser](https://github.com/filebrowser/filebrowser) `docker`
 A Go application for managing files on a server. Supports multiple users and each user can have
 their own folder. Users can upload, delete, rename, preview, and edit files. The client is a Vue
 application and text files can be edited using CodeMirror. Can be deployed as a single Docker image
@@ -78,9 +78,6 @@ Built with the Macaron web framework. Supports MySQL, PostgreSQL, MSSQL, and SQL
 the XORM ORM. Authentication sources include LDAP, PAM, and SMTP. Has support for web hooks.
 Deployment via source, binary, or Docker.
 
-#### [gotty](https://github.com/yudai/gotty)
-A single Go binary for displaying terminal output in the browser.
-
 #### [mattermost](https://github.com/mattermost/mattermost-server) ([demo](https://demo.mattermost.com)) `mobile` `desktop` `docker`
 A Go team chat application providing a Slack-like experience. Includes a React web interface, as
 well as React Native mobile applications and an Electron desktop application. Can use either MySQL
@@ -92,8 +89,16 @@ as a terminal CLI. Deployment via binary or Docker.
 
 ## Java
 
-#### [commafeed](https://github.com/Athou/commafeed) ([demo](https://www.commafeed.com/#/feeds/view/category/all)) `inactive`
+#### [che](https://github.com/eclipse/che)
+A Java cloud-based IDE. The development of the IDE itself was done in Che. Deployment via Docker or
+to a Kubernetes cluster on OpenShift.
+
+#### [commafeed](https://github.com/Athou/commafeed) ([demo](https://www.commafeed.com/#/feeds/view/category/all))
 A Dropwizard RSS reader with an AngularJS frontend. Supports MySQL, PostgreSQL, or MSSQL databases.
+
+#### [drawio](https://github.com/jgraph/drawio) ([demo](https://www.draw.io))
+A Java web application for drawing flowcharts in the browser. Charts can be saved locally or in
+Google Drive or Microsoft OneDrive.
 
 #### [hygieia](https://github.com/Hygieia/Hygieia) `docker`
 CapitalOne's DevOps dashboard application written with Spring. It can monitor sprint progress,
@@ -125,7 +130,7 @@ Docker.
 An Express application with a React frontend for visualizing algorithms in JavaScript. It includes a
 list of popular algorithms, and the user can edit them or create new algorithms.
 
-#### [bookmarkly](https://github.com/dangrossman/Bookmarkly) `abandoned`
+#### [bookmarkly](https://github.com/dangrossman/Bookmarkly)
 An Express application for storing bookmarks. MySQL and Redis are used on the backend, and the
 frontend is written with Backbone.
 
@@ -151,10 +156,6 @@ source or Docker.
 A JavaScript application for gamifying your habits. The backend is Express and MongoDB, while the
 frontend is a Vue application. Deployment via source, Docker, or Kubernetes on AWS.
 
-#### [hackernews-react-graphql](https://github.com/clintonwoo/hackernews-react-graphql) ([demo](http://www.hnclone.win)) `docker`
-A React application using Next, Redux, GraphQL (Apollo), and Express. Aims to match the styling of
-Hacker News. Deployment via source or Docker.
-
 #### [hotel](https://github.com/typicode/hotel)
 An Express application for managing local web applications. Provides a browser dashboard for
 starting-up/shutting-down services, displaying their output, and assigning them a `.localhost`
@@ -163,16 +164,16 @@ domain.
 #### [jspaint](https://github.com/1j01/jspaint) ([demo](https://jspaint.app)) `static`
 A clone of MS Paint using jQuery and HTML5 Canvas.
 
-#### [laverna](https://github.com/Laverna/laverna) ([demo](https://laverna.cc)) `static` `inactive`
+#### [laverna](https://github.com/Laverna/laverna) ([demo](https://laverna.cc)) `static`
 A JavaScript note-taking application written with Marionette using localStorage and indexedDB for
 storage. Can syncronize with Dropbox for persistence.
 
-#### [lets-chat](https://github.com/sdelements/lets-chat) `docker` `inactive`
+#### [lets-chat](https://github.com/sdelements/lets-chat) `docker`
 An Express chat application featuring multiple rooms, private chats, image embeds, Giphy
 integration, code snippets, file uploads, and a REST API. Uses MongoDB for persistence and files can
 be stored on the local filesystem, AWS S3, or Azure Blob. Deployment via source or Docker.
 
-#### [location-history-visualizer](https://github.com/theopolisme/location-history-visualizer) ([demo](https://locationhistoryvisualizer.com/heatmap)) `static` `inactive`
+#### [location-history-visualizer](https://github.com/theopolisme/location-history-visualizer) ([demo](https://locationhistoryvisualizer.com/heatmap)) `static`
 A browser application that takes a single JSON dump of your Google location history and renders a
 heatmap of your location data over time.
 
@@ -185,14 +186,14 @@ via source or Docker Compose.
 A Meteor application for interacting with a MongoDB database. Uses a MongoDB database itself for
 data persistence. Deployment via Docker.
 
-#### [notational](https://github.com/tmm/notational) `static` `inactive`
+#### [notational](https://github.com/tmm/notational) `static`
 A Vue note taking application with a Firebase backend.
 
-#### [notella](https://github.com/siddharthkp/notella) ([demo](https://siddharthkp.github.io/notella)) `static` `inactive`
+#### [notella](https://github.com/siddharthkp/notella) ([demo](https://siddharthkp.github.io/notella)) `static`
 A note taking PWA written with vanilla JavaScript and a Firebase backend. Demo requires Twitter
 authorization.
 
-#### [opennote](https://github.com/FoxUSA/OpenNote) ([demo](https://foxusa.github.io/OpenNote/OpenNote)) `inactive`
+#### [opennote](https://github.com/FoxUSA/OpenNote) ([demo](https://foxusa.github.io/OpenNote/OpenNote))
 An AngularJS note-taking application using PouchDB for browser storage. Can be connected to a
 CouchDB database for syncing/persistence and Minio for file storage.
 
@@ -216,15 +217,15 @@ social authentication.
 #### [reactjs-tmdb-app](https://github.com/SKempin/reactjs-tmdb-app) ([demo](https://skempin.github.io/reactjs-tmdb-app)) `static`
 A React application using the TMDb API and Twitter's Typeahead.js.
 
-#### [reforum](https://github.com/shoumma/ReForum) ([demo](https://reforum-app.herokuapp.com)) `inactive`
+#### [reforum](https://github.com/shoumma/ReForum) ([demo](https://reforum-app.herokuapp.com))
 A JavaScript forum application with an Express backend using MongoDB and Passport, and a React
 frontend.
 
-#### [reportr](https://github.com/Reportr/dashboard) `abandoned`
+#### [reportr](https://github.com/Reportr/dashboard)
 An Express application that provides a visual dashboard of your daily activities and a REST API to
 interface with it. Uses MongoDB on the backend.
 
-#### [shout](https://github.com/erming/shout) `abandoned`
+#### [shout](https://github.com/erming/shout)
 An Express-based IRC client that can be installed using NPM.
 
 #### [sitespeed](https://github.com/sitespeedio/sitespeed.io) `docker`
@@ -245,7 +246,7 @@ stock symbols as URL query parameters.
 #### [svgomg](https://github.com/jakearchibald/svgomg) ([demo](https://jakearchibald.github.io/svgomg)) `static`
 A browser application for using the SVGO optimization tool.
 
-#### [syte](https://github.com/rigoneri/Syte2) ([demo](http://www.rigoneri.com)) `abandoned`
+#### [syte](https://github.com/rigoneri/Syte2) ([demo](http://www.rigoneri.com))
 An Express application that builds a personal website for you by pulling data from Twitter,
 Instagram, Foursquare, GitHub, Dribbble, Spotify, YouTube, and Tumblr. The frontend uses AngularJS,
 and MongoDB is used for data persistence.
@@ -275,7 +276,7 @@ MongoDB, and Redis; while the frontend is React. Requires API keys from Stream, 
 to run. Can be run as a web application or a desktop application via Electron. Deployment via
 source or Docker.
 
-#### [youtransfer](https://github.com/YouTransfer/YouTransfer) ([demo](http://demo.youtransfer.io)) `docker` `inactive`
+#### [youtransfer](https://github.com/YouTransfer/YouTransfer) ([demo](http://demo.youtransfer.io)) `docker`
 A Restify application providing a simple web interface for uploading files to a server. Deployment
 via source or Docker.
 
@@ -283,7 +284,7 @@ via source or Docker.
 
 #### [411](https://github.com/etsy/411) ([demo](https://demo.fouroneone.io))
 A PHP application for managing alerts from Etsy. Uses SQLite, MySQL, and ElasticSearch LogStash.
-Triggers can be setup to email uses when certain criteria is discovered in LogStash. Users can log
+Triggers can be setup to email users when certain criteria is discovered in LogStash. Users can log
 in and mark alerts as resolved or escalate them.
 
 #### [akaunting](https://github.com/akaunting/akaunting) `docker`
@@ -331,7 +332,7 @@ A Laravel invoicing application with a frontend written with Knockout, jQuery, B
 Uses a MySQL database. Also includes Dart code for building native mobile apps using Flutter.
 Deployment via zip file or Docker.
 
-#### [invoiceplane](https://github.com/InvoicePlane/InvoicePlane) ([demo](https://demo.invoiceplane.com)) `inactive`
+#### [invoiceplane](https://github.com/InvoicePlane/InvoicePlane) ([demo](https://demo.invoiceplane.com))
 A CodeIgniter invoicing application using a MySQL database on the backend.
 
 #### [koel](https://github.com/phanan/koel) ([demo](http://demo.koel.phanan.net))
@@ -343,11 +344,11 @@ Last.fm or search for music videos on YouTube. Supports any database supported b
 A Laravel application for keeping track of personal relationships like a CRM. Can use any database
 supported by Laravel. Deployment via source or Docker.
 
-#### [paperwork](https://github.com/twostairs/paperwork) `docker` `inactive`
+#### [paperwork](https://github.com/twostairs/paperwork) `docker`
 A Laravel note-taking application with an AngularJS frontend. Uses a MySQL database on the backend.
 Deployment via source or Docker.
 
-#### [polr](https://github.com/cydrobolt/polr) ([demo](https://demo.polr.me)) `inactive`
+#### [polr](https://github.com/cydrobolt/polr) ([demo](https://demo.polr.me))
 A Lumen URL-shortener application using a MySQL database.
 
 #### [selfoss](https://github.com/SSilence/selfoss)
@@ -358,7 +359,7 @@ jQuery UI.
 #### [sonerezh](https://github.com/Sonerezh/sonerezh) ([demo](https://www.sonerezh.bzh/demo))
 A Cake application for streaming a music collection. Uses a MySQL database on the backend.
 
-#### [unmark](https://github.com/cdevroe/unmark) `inactive`
+#### [unmark](https://github.com/cdevroe/unmark)
 A PHP bookmark manager application using a MySQL database on the backend.
 
 #### [wallabag](https://github.com/wallabag/wallabag) `docker`
@@ -372,11 +373,11 @@ A Django application for parents to track a baby's daily activity. Requires a we
 application server, and SQL database on the backend. Deployment via Heroku, AWS Elastic Beanstalk,
 or Docker. Demo credentials are `admin`:`admin`.
 
-#### [cabot](https://github.com/arachnys/cabot) `docker` `inactive`
+#### [cabot](https://github.com/arachnys/cabot) `docker`
 A Django DevOps monitoring application. Uses PostgreSQL, Redis, Celery, and Caddy. Deployment via
 Docker Compose.
 
-#### [cloudtunes](https://github.com/jakubroztocil/cloudtunes) `abandoned`
+#### [cloudtunes](https://github.com/jakubroztocil/cloudtunes)
 An iTunes clone that streams audio files saved in Dropbox. The backend is written in Python using
 Tornado, Celery, MongoDB, and Redis. The frontend is written in Coffeescript using Backbone.
 
@@ -396,7 +397,7 @@ with any database supported by Django. Deployment via source or Docker Compose.
 A project management application with a Python backend using Django, PostgreSQL, and RabbitMQ; and
 a JavaScript frontend using AngularJS.
 
-#### [wger](https://github.com/wger-project/wger) `docker` `inactive`
+#### [wger](https://github.com/wger-project/wger) `docker`
 A Django fitness tracker application for managing your weight, diet, and workouts. Can also be used
 by personal trainers for managing individual clients. Can use any database supported by Django.
 Deployment via source, PyPI, or Docker.
@@ -418,7 +419,7 @@ application that provides a REST API and a Node.js Express application provides 
 streaming API. The frontend is built with React and Redux. PostgreSQL is used for data persistence,
 and Redis is used for pub/sub. Deployment via source or Docker Compose.
 
-#### [resume](https://github.com/resume/resume.github.com) ([demo](http://resume.github.io)) `abandoned`
+#### [resume](https://github.com/resume/resume.github.com) ([demo](http://resume.github.io))
 An application that generates a resume based on your GitHub activity. Uses Rack on the backend.
 
 #### [snibox](https://github.com/snibox/snibox) ([demo](https://snibox-demo.herokuapp.com)) `docker`
